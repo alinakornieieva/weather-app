@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c3d5456d16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="container m-5">
+      <ul class="cities">
+        <li class="city">Lisabon</li>
+        <li class="city">Berlin</li>
+        <li class="city">London</li>
+      </ul>
+      <i class="fa-regular fa-clock clock"></i>
+      <h3 class="curent-time" id="curent-time">Current time: 12:22</h3>
+      <a href="#" class="temperature1" id="degrees1"> °C </a>
+      <p class="between">|</p>
+      <a href="#" class="temperature" id="degrees"> °F </a>
+      <form id="search-form">
+        <input
+          type="search"
+          class="search-city"
+          id="search-city"
+          placeholder="Kyiv"
+        />
+        <button><i class="fa-solid fa-magnifying-glass search"></i></button>
+        <button class="current" id="current-location">Current</button>
+      </form>
+      <div class="container-3" id="container">
+        <h1 class="name-city" id="name-city">Kyiv</h1>
+        <h2 id="day-week">Wednesday, 29 June</h2>
+      </div>
+      <div class="container-1">
+        <h1 class="temperature-container-1" id="degree-change">31°C</h1>
+        <i class="fa-regular fa-sun sun"></i>
+      </div>
+      <div class="editional">
+        <h4>Humidity: <span id="humidity">45</span>%</h4>
+        <h4>Wind: <span id="wind">13</span>km/h</h4>
+      </div>
+      <div class="container-2">
+        <div class="row">
+          <div class="col day-1">
+            Thu
+            <div class="p-3 border bg-light rounded">
+              26°C <br />
+              <i class="fa-solid fa-cloud-rain"></i>
+            </div>
+          </div>
+          <div class="col day-2">
+            Fri
+            <div class="p-3 border bg-light rounded">
+              25°C <br />
+              <i class="fa-solid fa-cloud-rain"></i>
+            </div>
+          </div>
+          <div class="col day-3">
+            Sat
+            <div class="p-3 border bg-light rounded">
+              28°C <br />
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+          </div>
+          <div class="col day-4">
+            Sun
+
+            <div class="p-3 border bg-light rounded">
+              29°C <br />
+              <i class="fa-regular fa-sun"></i>
+            </div>
+          </div>
+          <div class="col day-5">
+            Mon
+            <div class="p-3 border bg-light rounded">
+              32°C <br />
+              <i class="fa-regular fa-sun"></i>
+              <script src="/src/app.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="additional"><a href="">Open-source code</a>by Alina Kornieieva</p>
+  </body>
+</html>
