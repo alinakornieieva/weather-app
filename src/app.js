@@ -39,6 +39,7 @@ currentDay.innerHTML = `${month} ${date}`;
 currentTime.innerHTML = `${day} ${hours}:${minutes} `;
 
 function displayWeather(response) {
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#name-city").innerHTML = response.data.name;
   document.querySelector("#degree-change").innerHTML =
     Math.round(response.data.main.temp) + "°C";
@@ -76,5 +77,24 @@ searchButton.addEventListener("submit", submit);
 
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", searchCurrentLocation);
+
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemp = Math.round((celsiusTemp * 9) / 5 + 32) + "°F";
+  let fahrenheitValue = document.querySelector("#degree-change");
+  fahrenheitValue.innerHTML = fahrenheitTemp;
+}
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let celsiusValue = document.querySelector("#degree-change");
+  celsiusValue.innerHTML = Math.round(celsiusTemp) + "°C";
+}
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsius);
+
+let celsiusTemp = null;
 
 search("Kyiv");
