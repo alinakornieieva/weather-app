@@ -5,10 +5,16 @@
   border: solid 1.5px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 15px 5px 5px;
+  background-color: #ffffe4;
 }
 
+.link-to-github {
+  color: #613864;
+}
 .cities {
   list-style-type: none;
+  color: #613864;
+  font-weight: 600;
 }
 .city {
   display: inline;
@@ -29,6 +35,8 @@
   top: 15px;
   right: 20px;
   font-size: 20px;
+  color: #613864;
+  font-weight: 600;
 }
 
 .temperature {
@@ -47,6 +55,7 @@
 .temperature,
 .temperature1 {
   text-decoration: none;
+  color: #fe4e6e;
 }
 
 .between {
@@ -59,7 +68,7 @@
 .search-city {
   margin: 20px 0px 20px 10px;
   padding: 5px 7px;
-  border: 3px solid rgb(6, 199, 252);
+  border: 3px solid #fe4e6e;
   border-radius: 5px;
 }
 
@@ -67,28 +76,31 @@ button {
   margin: 0px;
   padding: 5px 15px;
   border-radius: 5px;
-  border: 3px solid rgb(6, 199, 252);
+  border: 3px solid #fe4e6e;
   background-color: white;
 }
 
 .search {
-  color: rgb(6, 199, 252);
+  color: #fe4e6e;
   font-size: 20px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: lighter;
+  color: #613864;
+  font-weight: 400;
 }
 
 .container-1 {
-  border: 5px solid rgb(6, 199, 252);
+  border: 5px solid #fe4e6e;
   width: 200px;
   height: 80px;
   position: absolute;
   right: 60px;
   top: 150px;
   border-radius: 5px;
+  background-color: white;
 }
 
 .temperature-container-1 {
@@ -107,14 +119,16 @@ h2 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: lighter;
+  color: #613864;
+  font-weight: 400;
 }
 
 .editional {
   position: absolute;
-  right: 120px;
-  top: 250px;
+  right: 145px;
+  top: 240px;
 }
 
 .name-city,
@@ -132,11 +146,11 @@ h2 {
 }
 
 .name-city {
-  font-size: 60px;
+  font-size: 56px;
 }
 
 .container-2 {
-  padding: 60px 0px 0px;
+  padding: 50px 0px 0px;
 }
 
 .day-1,
