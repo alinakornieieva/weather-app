@@ -100,9 +100,10 @@ h2 {
 
 .sun {
   position: relative;
-  font-size: 48px;
+
   left: 120px;
-  bottom: 55px;
+  bottom: 65px;
+  width: 35%;
 }
 
 h4 {
@@ -126,12 +127,16 @@ h2 {
   padding: 0px 30px;
 }
 
+.description {
+  text-transform: capitalize;
+}
+
 .name-city {
   font-size: 60px;
 }
 
 .container-2 {
-  padding: 100px 0px 0px;
+  padding: 60px 0px 0px;
 }
 
 .day-1,
