@@ -26,7 +26,6 @@
         <li class="city">Berlin</li>
         <li class="city">London</li>
       </ul>
-
       <h3 class="curent-time" id="curent-time">Current time: 12:22</h3>
       <a href="#" class="temperature1" id="celsius"> °C </a>
       <p class="between">|</p>
@@ -40,21 +39,40 @@
         />
         <button><i class="fa-solid fa-magnifying-glass search"></i></button>
       </form>
-      <div class="container-3" id="container">
-        <h1 class="name-city" id="name-city">Kyiv</h1>
-        <h2 id="day-week">Wednesday, 29 June</h2>
+
+      <div class="container-main" id="container">
+        <div class="row">
+          <div class="col-6 first">
+            <h1 class="name-city" id="name-city">Kyiv</h1>
+            <h2 id="day-week">Wednesday, 29 June</h2>
+          </div>
+          <div class="col-6">
+            <span class="temperature-of-the-day" id="degree-change">31°C </span>
+            <img
+              src="https://media1.thehungryjpeg.com/thumbs2/ori_3591045_8mz1rrfhlcwgauorcfzvlvhwngr15d2g4qbjihfv_sun-icon.jpg"
+              id="icon"
+              class="sun"
+            />
+
+            <h4>Humidity: <span id="humidity">45</span>%</h4>
+            <h4>Wind: <span id="wind">13</span>km/h</h4>
+          </div>
+        </div>
       </div>
-      <div class="container-1">
-        <h1 class="temperature-container-1" id="degree-change">31°C</h1>
-        <img
-          src="https://media1.thehungryjpeg.com/thumbs2/ori_3591045_8mz1rrfhlcwgauorcfzvlvhwngr15d2g4qbjihfv_sun-icon.jpg"
-          id="icon"
-          class="sun"
-        />
-      </div>
-      <div class="editional">
-        <h4>Humidity: <span id="humidity">45</span>%</h4>
-        <h4>Wind: <span id="wind">13</span>km/h</h4>
+
+      <div class="row">
+        <div class="col-2">
+          <div class="weather-forecast-date">Sun</div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1555/1555512.png"
+            width="48"
+            alt=""
+          />
+          <div class="weather-forecast-temps">
+            <span class="weather-forecast-temp-max">32°</span>
+            <span class="weather-forecast-temp-min">28°</span>
+          </div>
+        </div>
       </div>
     </div>
     <a

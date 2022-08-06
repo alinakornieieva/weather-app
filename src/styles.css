@@ -5,7 +5,7 @@
   border: solid 1.5px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 15px 5px 5px;
-  background-color: #ffffe4;
+  background-color: #fbfbec;
 }
 
 .link-to-github {
@@ -13,7 +13,6 @@
 }
 .cities {
   list-style-type: none;
-  color: #613864;
   font-weight: 600;
 }
 .city {
@@ -21,21 +20,11 @@
   padding: 0px 15px 0px;
 }
 
-.clock {
-  text-align: right;
-  position: absolute;
-  top: 10px;
-  right: 180px;
-  width: 100%;
-  font-size: 34px;
-}
-
 .curent-time {
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 20px;
-  color: #613864;
   font-weight: 600;
 }
 
@@ -88,59 +77,27 @@ button {
 h2 {
   font-size: 20px;
   font-weight: lighter;
-  color: #613864;
   font-weight: 400;
-}
-
-.container-1 {
-  border: 5px solid #fe4e6e;
-  width: 200px;
-  height: 80px;
-  position: absolute;
-  right: 60px;
-  top: 150px;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.temperature-container-1 {
-  position: relative;
-  left: 10px;
-  top: 3px;
-  font-size: 48px;
-}
-
-.sun {
-  position: relative;
-
-  left: 120px;
-  bottom: 65px;
-  width: 35%;
 }
 
 h4 {
-  font-size: 17px;
-  font-weight: lighter;
-  color: #613864;
+  font-size: 16px;
   font-weight: 400;
 }
 
-.editional {
-  position: absolute;
-  right: 145px;
-  top: 240px;
+.first {
+  padding-left: 30px;
 }
 
-.name-city,
-h2 {
-  padding: 10px 0px -10px 0px;
+.temperature-of-the-day {
+  font-size: 48px;
+  font-weight: 600;
 }
 
-.container-3 {
-  margin: 5px;
-  padding: 0px 30px;
+.container-main {
+  padding-top: 20px;
 }
 
 .name-city {
-  font-size: 56px;
+  font-size: 48px;
 }
