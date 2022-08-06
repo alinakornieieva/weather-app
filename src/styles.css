@@ -141,24 +141,6 @@ h2 {
   padding: 0px 30px;
 }
 
-.description {
-  text-transform: capitalize;
-}
-
 .name-city {
   font-size: 56px;
-}
-
-.container-2 {
-  padding: 50px 0px 0px;
-}
-
-.day-1,
-.day-2,
-.day-3,
-.day-4,
-.day-5 {
-  text-align: center;
-  padding: 12px;
-  font-size: 22px;
 }
