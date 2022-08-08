@@ -7,9 +7,16 @@
   padding: 15px 5px 5px;
   background-color: #fbfbec;
 }
+.link {
+  margin: 10px;
+}
 
 .link-to-github {
   color: #fe4e6e;
+}
+
+img {
+  margin-bottom: 25px;
 }
 
 .curent-time {
@@ -53,6 +60,7 @@ h4 {
 
 .first {
   padding-left: 30px;
+  margin-top: 15px;
 }
 
 .temperature-of-the-day {

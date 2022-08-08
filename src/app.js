@@ -127,7 +127,3 @@ let searchButton = document.querySelector("#search-form");
 searchButton.addEventListener("submit", submit);
 
 search("Kyiv");
-
-console.log(
-  `https://api.openweathermap.org/data/2.5/weather?q=warsaw&appid=ea5e6773c5e751dd43021439f134293d&units=metric`
-);
