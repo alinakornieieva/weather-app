@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 600px;
-  height: 530px;
+  height: 480px;
   border: solid 1.5px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 15px 5px 5px;
@@ -100,4 +100,8 @@ h4 {
 
 .name-city {
   font-size: 48px;
+}
+
+.forecast {
+  padding-top: 30px;
 }

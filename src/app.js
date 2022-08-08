@@ -38,29 +38,45 @@ let currentDay = document.querySelector("#day-week");
 currentDay.innerHTML = `${month} ${date}`;
 currentTime.innerHTML = `${day} ${hours}:${minutes} `;
 
+function formatDate(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data);
+  let forecastElement = response.data.daily;
   let forecast = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecastElement.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
     <div class="col-2">
-      <div class="weather-forecast-date">${day}</div>
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1555/1555512.png"
+      <div class="weather-forecast-date"><center>
+      ${formatDate(forecastDay.dt)}</center></div>
+      <center><img
+        src="http://openweathermap.org/img/wn/${
+          forecastDay.weather[0].icon
+        }@2x.png"
         width="48"
         alt=""
-      />
-      <div class="weather-forecast-temps">
-        <span class="weather-forecast-temp-max">32°</span>
-        <span class="weather-forecast-temp-min">28°</span>
-      </div>
+      /></center>
+      <div class="weather-forecast-temps"><center>
+        <span class="weather-forecast-temp-max">${Math.round(
+          forecastDay.temp.max
+        )}°</span>
+        <span class="weather-forecast-temp-min">${Math.round(
+          forecastDay.temp.min
+        )}°</span>
+        </center></div>
     </div>
   `;
+    }
   });
+
   forecastHTML = forecastHTML + `</div>`;
   forecast.innerHTML = forecastHTML;
 }
