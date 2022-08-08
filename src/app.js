@@ -126,23 +126,8 @@ function searchLocation(position) {
 let searchButton = document.querySelector("#search-form");
 searchButton.addEventListener("submit", submit);
 
-function displayFahrenheit(event) {
-  event.preventDefault();
-  let fahrenheitTemp = Math.round((celsiusTemp * 9) / 5 + 32) + "°F";
-  let fahrenheitValue = document.querySelector("#degree-change");
-  fahrenheitValue.innerHTML = fahrenheitTemp;
-}
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-function displayCelsius(event) {
-  event.preventDefault();
-  let celsiusValue = document.querySelector("#degree-change");
-  celsiusValue.innerHTML = Math.round(celsiusTemp) + "°C";
-}
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", displayCelsius);
-
-let celsiusTemp = null;
-
 search("Kyiv");
+
+console.log(
+  `https://api.openweathermap.org/data/2.5/weather?q=warsaw&appid=ea5e6773c5e751dd43021439f134293d&units=metric`
+);
