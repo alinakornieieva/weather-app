@@ -38,6 +38,39 @@ let currentDay = document.querySelector("#day-week");
 currentDay.innerHTML = `${month} ${date}`;
 currentTime.innerHTML = `${day} ${hours}:${minutes} `;
 
+function displayForecast(response) {
+  console.log(response.data);
+  let forecast = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="weather-forecast-date">${day}</div>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1555/1555512.png"
+        width="48"
+        alt=""
+      />
+      <div class="weather-forecast-temps">
+        <span class="weather-forecast-temp-max">32°</span>
+        <span class="weather-forecast-temp-min">28°</span>
+      </div>
+    </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "ea5e6773c5e751dd43021439f134293d";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayWeather(response) {
   celsiusTemp = response.data.main.temp;
   document.querySelector("#name-city").innerHTML = response.data.name;
@@ -52,6 +85,7 @@ function displayWeather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  getForecast(response.data.coord);
 }
 
 function search(city) {
