@@ -7,10 +7,13 @@
   padding: 15px 5px 5px;
   background-color: #fbfbec;
 }
+.weather-description {
+  text-transform: capitalize;
+}
+
 .link {
   margin: 10px;
 }
-
 .link-to-github {
   color: #fe4e6e;
 }
